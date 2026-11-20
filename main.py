@@ -1,4 +1,5 @@
-from PythonScripts.AppFlow.account import login
+from PythonScripts.AppFlow.account_style import login
+from PythonScripts.AppFlow.quote_style import make_quote
 from PythonScripts.AppFlow.selection import vehicle_select
 from PythonScripts.AppFlow.summary import tally_price
 import uuid
@@ -8,9 +9,10 @@ def main_application():
 
     total_cost = None
     while total_cost == None:
-        user = login()
+        # user = login()
+        quote = make_quote()
         vehicle = vehicle_select()
-        total_cost = tally_price(user=user, vehicle=vehicle)
+        total_cost = tally_price(user=quote, vehicle=vehicle)
     print("Thank you for using our service.")
     print(f"Your ticket Id is: {uuid.uuid4()}")
     print("-----------------------------------------------")
