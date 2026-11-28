@@ -3,7 +3,6 @@ from ..Classes.User import User
 def make_quote():
     """ Function to make user object """
     membership = None
-    email = None
 
     print("Are you an existing user?")
     print("YES / NO")
@@ -20,6 +19,6 @@ def make_quote():
             else:
                 print("Please enter a valid selection")
 
-        return User(email=email, membership=membership.lower().strip())
+        return User(membership=membership.lower().strip())
     else:
-        return User(email=email, membership=None)
+        return User(membership=None)

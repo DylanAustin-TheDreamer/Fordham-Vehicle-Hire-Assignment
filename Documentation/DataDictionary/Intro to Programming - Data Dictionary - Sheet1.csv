@@ -1,0 +1,12 @@
+Identifier,Type,Purpose,Practice Example,Returns (if any)
+Vehicle,Class,A parent class for all vehicle types,"van = Vehicle(type=""v"")",Returns another return of a function that returns cost based on the Class' type
+"Car, Van",Class,A child class that inherits from the Vehicle Class,"van = Vehicle(type=""v"")",Returns another return of a function that returns cost based on the Class' type
+"validated, while",Boolean,To keep a while loop running until input is valid,while validated == False:,Returns a value to end the loop - I often used while loops within helper functions
+User,Class,To store whether or not user created is an existing customer and their membership type,"user = User(membership=""Gold"")",Returns membership attribute
+"ended, while",Boolean,To keep a while loop running until ended,while ended == False:,Returns a value to end the loop - I often used while loops within helper functions
+"try, except",Exception Handling,"I used this method to respond to user input in different ways. If they did not enter a number I can catch this with an exception to tell the user to enter a number. In the try block, we can then dictate whether the number is less than 1 or more then 10, and respond in an appropriate way so the user can understand what the program is asking of them.",try: if input < 1 or > 10 - Please enter a number within this range. except: please enter a number - Because the user had obviously not put an integer value,None
+total,Float,The base variable for the total price,total = 0,None
+apply_discount,Boolean,Used to make a decision on whether a 10% discount needs to be applied to the total cost,,None
+apply_insurance,Boolean,"Used to make a decision on whether an insurance cost of £15.50, needs to be applied to the total cost",,None
+apply_membership_discount,Boolean,"Used to make a decision on whether a membership discount of -£18, needs to be applied to the total cost",,None
+discount,Float,This variable stores the value of 10% of the current total. This value is then taken from the total cost,,None

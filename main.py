@@ -9,7 +9,11 @@ def main_application():
 
     total_cost = None
     while total_cost == None:
+        # I have removed user login functionality since it was not in line with the assignment requirements
         # user = login()
+
+        # The quote style is more in line with the assignment requirements. I would like to document that I-
+        # can understand the assignment requirements
         quote = make_quote()
         vehicle = vehicle_select()
         total_cost = tally_price(user=quote, vehicle=vehicle)
