@@ -12,3 +12,6 @@ class Vehicle:
         """ Returns a base hire cost """
 
         return check_type(self.type)
+
+    def get_type(self):
+        return self.type
