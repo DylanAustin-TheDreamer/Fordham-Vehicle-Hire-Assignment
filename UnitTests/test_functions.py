@@ -10,7 +10,6 @@ def test_tally_price_no_insurance(monkeypatch):
     vehicle = Car(type="s")
 
     result = tally_price(user, vehicle)
-
     assert result == vehicle.generate_cost()
 
 def test_tally_price_with_insurance(monkeypatch):
@@ -21,7 +20,6 @@ def test_tally_price_with_insurance(monkeypatch):
     vehicle = Car(type="s")
 
     result = tally_price(user, vehicle)
-
     assert result == vehicle.generate_cost() + 15.50
 
 def test_tally_price_with_insurance_and_membership(monkeypatch):
@@ -32,5 +30,4 @@ def test_tally_price_with_insurance_and_membership(monkeypatch):
     vehicle = Car(type="hp")
 
     result = tally_price(user, vehicle)
-    print(result)
     assert result == (vehicle.generate_cost() + 15.50) -18
